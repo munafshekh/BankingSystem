@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sun Bank Homepage</title>
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="top-container">
+                <button id="logo-button" type="button" onclick="logo_clicked()">
+                    <span id="logo">☀️SunBank</span>
+                </button>
+                <button id="menu-toggle">☰</button>     
+            </div>
+
+            <!-- 3 dash menu or aka hamburger menu 
+             and it contains the nav links which contains the icons.
+             Additionally, I have used id called 'current' to change 
+             colors of the current page-->
+            <div id="nav-links">
+                <a id="current" href="home.html">
+                    <img class="logo-image" src="images/home.png" alt="home">Home
+                </a>
+                <a href="mortgage-calculator.html">
+                    <img class="logo-image" src="images/calculator.png" alt="calculator">Mortgage Calculator
+                </a>
+                <a href="contact-us.html">
+                    <img class="logo-image" src="images/email.png" alt="email">Contact us
+                </a>
+                <a href="about-us.html">
+                    <img class="logo-image" src="images/about-us.png" alt="info">About us
+                </a>
+                <a href="services.html">
+                    <img class="logo-image" src="images/customer.png" alt="customer">Services
+                </a>
+                <a href="faqs.html">
+                    <img class="logo-image" src="images/chat.png" alt="chat icon">FAQs
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="hero">
+            <h1 id="main-title">Welcome to SunBank</h1>
+            <h2>"Let your money grow and shine with us. <br>
+                Achieving the impossible, together!"
+            </h2>
+        </div>
+
+        <h2 id="h2-align">Our Services</h2>
+        <br>
+        
+        <section>
+            <div>
+                <img src="/images/card.jpg" alt="account card">
+                <h3>Bank Accounts</h3>
+                <p>We offer - <br>
+                    <ul>
+                        <li>Personal Account</li>
+                        <li>Student Account</li>
+                        <li>Business Account</li>
+                        <li>Joint Account</li>
+                        <li>Credit Cards</li>
+                        <li>Savings Account</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div>
+                <img src="/images/investments.jpg" alt="stock market">
+                <h3>Investments</h3>
+                <p>SunBank Investments offers tailored solutions for sustainable growth, helping clients achieve their financial goals with reliable and innovative options.</p>
+            </div>
+
+            <div>
+                <img src="/images/life-ins.jpg" alt="happy couple">
+                <h3>Insurances and Loans</h3>
+                <p>SunBank offers flexible loans and reliable insurance plans to meet your needs, ensuring financial security and peace of mind.</p>
+            </div>
+
+            <div>
+                <img src="/images/calc-image.jpg" alt="calculator">
+                <h3>Loan Services</h3>
+                <p>Try our mortgage calculator!</p>
+                <button id="calc-button">
+                    <a href="mortgage-calculator.html">Mortgage Calculator</a>
+                </button>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is the footer. Contact us.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

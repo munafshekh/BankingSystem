@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Sun Bank Homepage</title>
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="top-container">
+                <button id="logo-button" type="button" onclick="logo_clicked()">
+                    <span id="logo">☀️SunBank</span>
+                </button>
+                <button id="menu-toggle">☰</button>     
+            </div>
+
+            <!-- 3 dash menu or aka hamburger menu 
+             and it contains the nav links which contains the icons.
+             Additionally, I have used id called 'current' to change 
+             colors of the current page-->
+            <div id="nav-links">
+                <a  href="home.html">
+                    <img class="logo-image" src="images/home.png" alt="home">Home
+                </a>
+                <a href="mortgage-calculator.html">
+                    <img class="logo-image" src="images/calculator.png" alt="calculator">Mortgage Calculator
+                </a>
+                <a href="contact-us.html">
+                    <img class="logo-image" src="images/email.png" alt="email">Contact us
+                </a>
+                <a href="about-us.html">
+                    <img class="logo-image" src="images/about-us.png" alt="info">About us
+                </a>
+                <a href="services.html">
+                    <img class="logo-image" src="images/customer.png" alt="customer">Services
+                </a>
+                <a id="current" href="faqs.html">
+                    <img class="logo-image" src="images/chat.png" alt="chat icon">FAQs
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="title-faqs">Welcome to FAQs</h1>
+
+        <div class="faq-container">
+            <button class="accordian">What services does SunBank offers?</button>
+            <div class="dropdown">
+                <p>We provide loans, insurance, current accounts, bussiness accounts, savings accounts, and investment options.</p>
+            </div>
+            <br>
+
+            <button class="accordian">Are there mortgage options available?</button>
+            <div class="dropdown">
+                <p>Yes! We have multiple mortgage options available, they can be on house or cars. Please check out our mortgage calculator to check if you qualify for it!</p>
+            </div>
+            <br>
+
+            <button class="accordian">What are the interest rates for savings accounts?</button>
+            <div class="dropdown">
+                <p>Rates vary; check our website for current offers. As of now, they have been set at 4.5%</p>
+            </div>
+            <br>
+
+            <button class="accordian">What are your investment options?</button>
+            <div class="dropdown">
+                <p>We offer mutual funds, fixed deposits, and retirement plans. We even have ISAs accounts and LISAs</p>
+            </div>
+            <br>
+
+            <button class="accordian">What are ISAs and LISAs?</button>
+            <div class="dropdown">
+                <p>They are Individual Savings Accounts and Lifetime Individual Savings Accounts respectively, the limit for ISAs are £20,000 per year.</p>
+            </div>
+            <br>
+
+            <button class="accordian">How do I contact customer service?</button>
+            <div class="dropdown">
+                <p>If you go to the contact us page, there will be a form where you can fill out your details and we will get back to you as soon as possible.</p>
+            </div>
+            <br>
+
+            <button class="accordian">What types of insurance do you offer?</button>
+            <div class="dropdown">
+                <p>We offer life, health, property, and business insurance.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Privacy Policy. Terms and Conditions.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
