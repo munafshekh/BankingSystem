@@ -4,47 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Lime Bank</title>
+    <title>Sun Bank Homepage</title>
 </head>
 <body>
-    <!-- This is my header -->
     <header>
+        <nav> 
+            <div class="top-container">
+                <button id="logo-button" type="button" onclick="logo_clicked()">
+                    <span id="logo">☀️SunBank</span>
+                </button>
+                <button id="menu-toggle">☰</button>     
+            </div>
 
-        <!-- Top section of the web -->
-        <section class="top-section">
-            <nav class="navigation">
-                <div class="list-container">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
-                    <li id="current"><a href="services.html">Services</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                </div>
-            </nav>
-        </section>
-
-        <!-- Bottom section of the web -->
-        <section class="bottom-section">
-            <img src="images/LimeBank.png" alt="logo" id="logo">
-            <b><h2>LimeBank</h2></b>
-        </section>
-        
+            <!-- 3 dash menu or aka hamburger menu 
+             and it contains the nav links which contains the icons.
+             Additionally, I have used id called 'current' to change 
+             colors of the current page-->
+            <div id="nav-links">
+                <a href="home.html">
+                    <img class="logo-image" src="images/home.png" alt="home">Home
+                </a>
+                <a href="mortgage-calculator.html">
+                    <img class="logo-image" src="images/calculator.png" alt="calculator">Mortgage Calculator
+                </a>
+                <a href="contact-us.html">
+                    <img class="logo-image" src="images/email.png" alt="email">Contact us
+                </a>
+                <a href="about-us.html">
+                    <img class="logo-image" src="images/about-us.png" alt="info">About us
+                </a>
+                <a id="current" href="services.html">
+                    <img class="logo-image" src="images/customer.png" alt="customer">Services
+                </a>
+                <a href="faqs.html">
+                    <img class="logo-image" src="images/chat.png" alt="chat icon">FAQs
+                </a>
+            </div>
+        </nav>
     </header>
 
-    <!-- This is where the main content will go -->
     <main>
-        <p>
-            This is something we are working on.
-        </p>
+
+
+        <h1>Our Services</h1>
+
+        <section>
+            <div>
+                <img src="images/card.jpg" alt="account card">
+                <h3>Bank Accounts</h3>
+                <p>We offer - <br>
+                    <ul>
+                        <li>Personal Account</li>
+                        <li>Student Account</li>
+                        <li>Business Account</li>
+                        <li>Joint Account</li>
+                        <li>Credit Cards</li>
+                        <li>Savings Account</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div>
+                <img src="images/calc-image.jpg" alt="calculator">
+                <h3>Loan Services</h3>
+                <p>Try our mortgage calculator!</p>
+                <button id="calc-button">
+                    <a href="mortgage-calculator.html">Mortgage Calculator</a>
+                </button>
+                
+            </div>
+            
+            <div>
+                <img src="images/investments.jpg" alt="stock market">
+                <h3>Investments</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae labore itaque! Architecto est dolore ipsam consectetur nobis voluptas ullam, ab non reiciendis! Sint fugiat voluptatem ut amet sunt debitis.</p>
+            </div>
+
+            <div>
+                <img src="images/life-ins.jpg" alt="happy couple">
+                <h3>Insurances and Loans</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae temporibus ducimus sint deserunt ipsa ipsam ratione, tenetur eius cumque excepturi vel quam eveniet sunt veniam! Beatae eligendi repellat magni atque.</p>
+            </div>
+
+        </section>
+
     </main>
 
-    <!-- This is the little section where footer will go -->
     <footer>
-        <section>
-            <p>Copy Rights reserved 2024</p>
-        </section>
+        <p>This is the footer. Contact us.</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

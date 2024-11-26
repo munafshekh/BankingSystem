@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color:#FDB750;
+    background: linear-gradient(360deg, #FDB750, white);
     margin: 0;
     padding: 0;
     font-family: 'Arial Narrow', Arial;
@@ -284,3 +284,9 @@ footer {
     }
 
 }
+
+
+
+
+
+/* Mortgages Section */
