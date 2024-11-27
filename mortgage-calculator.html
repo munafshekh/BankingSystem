@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style2.css">
     <title>Sun Bank Homepage</title>
 </head>
 <body>
     <header>
-        <nav> 
+        <nav>
             <div class="top-container">
                 <button id="logo-button" type="button" onclick="logo_clicked()">
                     <span id="logo">☀️SunBank</span>
@@ -46,25 +46,51 @@
 
     <main>
 
-
-        <form action="" class="mortgage-calculator">
-            <label for="loan-amount">Loan Amount</label>
-            <input type="text" name="loanAmount" id="loan-amount">
-
-            <label for="income">Monthly Income</label>
-            <input type="text" name="monthlyIncome" id="income">
-
-            <label for="term">Loan Terms (How many years)</label>
-            <input type="text" name="loanTerm" id="term">
+        <h1 class="title-faqs">Mortgage Calculator</h1>
 
 
-        </form>
+        <!-- Mortgage Form, labels and input areas 
+            *required* I have used these tags so the user
+            cannot submit without having anything in it 
+        -->
+        <div class="form-container">
+            <form action="" class="mort-form">
+                <!-- Contains the content, justification - used in css to make it more
+                 user friendly -->
+                <div class="item-container">
+                    
+                    <label for="loan-amount">Loan Amount
+                        <span class="req-sign">*</span></label>
+                    <input type="number" name="loanAmount" id="loan-amount" placeholder="£10000" required>
+    
+                    <label for="income">Monthly Income
+                        <span class="req-sign">*</span>
+                    </label>
+                    <input type="number" name="monthlyIncome" id="income" placeholder="£2500" required>
+    
+                    <label for="term">Loan Terms (How many years)
+                        <span class="req-sign">*</span>
+                    </label>
+                    <input type="number" name="loanTerm" id="term" placeholder="5" required>
+    
+                    <input type="submit" value="Submit" id="submit-mortgage">
+                </div>
+            </form>
+    
+            <!-- Code will be injected from js when an assessment is done
+             i.e. after submit is pressed with correct values -->
+            <section id="assessment"> 
+    
+            </section>
+
+        </div>
+
                 
     </main>
-
-    <footer>
-        <p>This is the footer. Contact us.</p>
+    <footer class="mortgage-footer">
+        <p>Copyright SunBank 2024 &copy;. Contact us.</p>
+        <p>Privacy Policy. Terms and Conditions</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

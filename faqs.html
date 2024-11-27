@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
     <title>Sun Bank Homepage</title>
 </head>
 <body>
@@ -45,10 +46,10 @@
     </header>
 
     <main>
-        <h1 id="title-faqs">Welcome to FAQs</h1>
+        <h1 class="title-faqs">Welcome to FAQs</h1>
 
         <div class="faq-container">
-            <button class="accordian">What services does SunBank offers?</button>
+            <button id="top-accordian" class="accordian">What services does SunBank offers?</button>
             <div class="dropdown">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt consequuntur maiores! Praesentium modi deleniti rerum ea itaque doloribus delectus eum officia. Explicabo tempora totam facere natus porro voluptatum molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita maiores aliquid autem perferendis perspiciatis doloremque earum repellendus ex, vel officiis ipsa odit ab similique magnam tempora corporis aliquam nesciunt inventore.</p>
             </div>
@@ -92,14 +93,16 @@
             <div class="dropdown">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquid maiores officiis eos cum fugit natus, explicabo fugiat, aliquam autem quam eaque accusantium aperiam, alias odio cupiditate harum saepe nisi.</p>
             </div>
+            <br>
 
             <button class="accordian">Lorem ipsum dolor sit amet consectetur?.</button>
             <div class="dropdown">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum consequuntur sapiente sit quasi, ad aperiam perferendis harum aspernatur tempore perspiciatis officia facere adipisci placeat possimus inventore exercitationem animi libero labore!</p>
             </div>
+            <br>
 
             <button class="accordian">Minima aliquam rerum doloremque assumenda dolorum nemo explicabo ?</button>
-            <div class="dropdown">
+            <div id="last-dropdown" class="dropdown">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, sint vitae dolorem magni neque blanditiis quaerat consectetur voluptate praesentium omnis nulla incidunt corrupti, ratione repudiandae rem explicabo, illo at amet!</p>
             </div>
 
@@ -107,9 +110,11 @@
 
     </main>
 
-    <footer>
-        <p>Privacy Policy. Terms and Conditions.</p>
+    <footer class="faq-footer">
+        <p>Copyright SunBank 2024 &copy;. Contact us.</p>
+        <p>Privacy Policy. Terms and Conditions</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/myJquery.js"></script>
 </body>
 </html>

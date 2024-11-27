@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
     <title>Sea Bank Homepage</title>
 </head>
 <body>
@@ -44,22 +46,58 @@
     </header>
 
     <main>
-        <section>
+
+        <div class="tab">
+            <button class="tablinks" data-about="Legacy">Legacy</button>
+            <button class="tablinks" data-about="History">History</button>
+            <button class="tablinks" data-about="Missions">Our Missions</button>
+            <button class="tablinks" data-about="Values">Our Values</button>
+          </div>
+
+        <div id="Legacy" class="tab-info">
             <h2>Legacy</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aliquid sunt facilis reiciendis, non dolorem voluptates. Aliquam quibusdam ut ducimus quos quo. Exercitationem maxime voluptate quod suscipit ipsa assumenda asperiores.</p>
-        </section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aliquid
+                 sunt facilis reiciendis, non dolorem voluptates. Aliquam quibusdam ut
+                  ducimus quos quo. Exercitationem maxime voluptate quod suscipit ipsa 
+                  assumenda asperiores.
+            </p>
+        </div>
 
-        <section>
+        <div id="History" class="tab-info" >
             <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum soluta reprehenderit sit doloribus ex pariatur, omnis repudiandae iste dolor. Blanditiis neque aspernatur veritatis officiis non commodi, deserunt perspiciatis totam fugiat.</p>
-        </section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Earum soluta reprehenderit sit doloribus ex pariatur, omnis repudiandae
+                  iste dolor. Blanditiis neque aspernatur veritatis officiis non commodi,
+                   deserunt perspiciatis totam fugiat.
+            </p>
 
+        </div>
+            
+        <div id="Missions" class="tab-info" >
+            <h2>Our Missions</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Natus necessitatibus iste dolorum voluptate esse possimus error 
+                nulla doloremque sit facere? Odit odio pariatur voluptas nam!
+                 Hic molestiae beatae aliquid blanditiis.
+            </p>    
+        </div>
+        
+        <div id="Values" class="tab-info" >
+            <h2>Our Missions</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Natus necessitatibus iste dolorum voluptate esse possimus error 
+                nulla doloremque sit facere? Odit odio pariatur voluptas nam!
+                 Hic molestiae beatae aliquid blanditiis.
+            </p>    
+        </div>
         
     </main>
 
     <footer>
-        <p>This is the footer. Contact us.</p>
+        <p>Copyright SunBank 2024 &copy;. Contact us.</p>
+        <p>Privacy Policy. Terms and Conditions</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/myJquery.js"></script>
 </body>
 </html>

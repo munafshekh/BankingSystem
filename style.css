@@ -5,6 +5,9 @@
     Mid contains the main sections and important section
     Low is for the footer
     same goes for the devices with less than 650px
+
+
+    Mainly consists of main pages such as Home, Services and About us
 */
 /* Top Section */
 * {
@@ -12,7 +15,8 @@
 }
 
 body {
-    background: linear-gradient(360deg, #FDB750, white);
+    background-color: #FDB750;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     font-family: 'Arial Narrow', Arial;
@@ -86,6 +90,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
+
 #current {
     background-color: #FC2E20;
 }
@@ -96,10 +101,15 @@ nav a:hover {
 
 /* Main */
 
+
+main {
+    margin: 0px;
+    padding-bottom: 60px;
+}
+
 h1, h2, h3 {
     text-align: center;
 }
-
 
 h3 {
     color: white;
@@ -118,12 +128,14 @@ h3 {
     background-image: url('images/sun.jpg');
     background-size: cover;
     background-position: center;
-    padding: 15dvw;
-    height: 20%;
+    margin-top: 0px;
+    padding: 150px;
+    width: 100%;
+    height: auto;
     border-bottom: 5px solid #FC2E20;
 }
 
-#main-title {
+.main-title {
     color: white;
     margin:0px;
     font-size: 5dvw;
@@ -138,12 +150,70 @@ h3 {
     font-style: italic;
 }
 
-section {
+
+.home-buttons {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    background-color: #FC2E20;
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.home-buttons:hover{
+    background-color: orange;
+    transition: 0.3s;
+}
+
+.home-section {
     display: flex;
     justify-content: space-between;
 }
 
-section div {
+.home-section div {
+    background-color: #FD7F20;
+    padding: 20px 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.home-section div:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+
+
+/* Services Section */
+.main-container-services {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.cards {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.cards:nth-child(even) {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.card {
     border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
@@ -153,19 +223,19 @@ section div {
     max-width: 400px;
 }
 
-section div img {
+.card img {
     width: 100%;
     height: 25vh;
     border-bottom: 3px solid white;
 }
 
-section div:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
+.card p {
+    padding: 10px;
 }
 
-section div p {
-    padding: 10px;
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 #calc-logo {
@@ -174,12 +244,16 @@ section div p {
 }
 
 #calc-button {
-    display: inline-block;
+    display: block;
+    justify-content: center;
     background-color: #FC2E20;
     border-color: transparent;
     border-radius: 10px;
-    padding: 100x 20px;
-    width: 100%;
+    padding: 20px 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 
@@ -194,28 +268,100 @@ section div p {
     color: white;
 }
 
+.buttons-animation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ani-button {
+    background-color: #FC2E20;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.ani-button:hover {
+    background-color: orange;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card {
+    display: none;
+}
+
+
+.avail:after {
+    background-color: orange;
+}
+
+/* About us section */
+
+.tab {
+    float: left;
+    background-color: black;
+    width: 30%;
+    height: 400px;
+}
+
+.tab button {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+
+.tab button:hover{
+    background-color: orange;
+}
+
+.tab button.active {
+    background-color: #FC2E20;
+}
+
+/* Tab content made hidden*/
+.tab-info {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    height: 400px;
+    text-align: center;
+}
+
+
 /* Footer */
 footer {
     margin-top: 30px;
     background-color: black;
     color: white;
-    position: relative;
+    position: fixed;
     padding: 10px;
+    margin-top: 30px;
     bottom: 0;
     width: 100%;
     text-align: center;
 }
 
 
+.home-footer {
+    position: fixed;
+    bottom: 0;
+}
+
 /* Used for devices with less screen width mainly phones
     and to make the website more responsive*/
 
+/* Specific to tablets where the screen size may be belwo 910px */
 @media only screen and (max-width: 910px) {
     #nav-links .logo-image {
         display: none;
     }
 }
 
+/* Specific to phones below screen size of 650px */
 @media only screen and (max-width: 650px) {
 
     /* TOP SECTION */
@@ -264,6 +410,27 @@ footer {
 
     }
 
+    #hero {
+        height: 30vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 1.5vw;
+        padding-top: 20px;
+    }
+
+    #hero h2 {
+        font-size: 2vh;
+    }
+
+    .home-section div {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     main section div {
         width: 90%;
         margin-left: auto;
@@ -276,17 +443,33 @@ footer {
         border-bottom: 2px solid white;
     }
 
-    /* BOTTOM SECTION */
-    footer {
-        position: sticky;
-        bottom: 0;
-        padding: 10px;
+    .main-title {
+        font-size: 6.5vw;
+    }
+    
+    .main-container-services {
+        margin: 10px;
+    }
+
+    .card {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .ani-button{
+        width: 20vh;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .tab {
+        display: block;
+    }
+
+    .tab button {
+        height: 58.5%;
     }
 
 }
 
-
-
-
-
-/* Mortgages Section */
