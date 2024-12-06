@@ -347,7 +347,7 @@ footer {
 
 
 .home-footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
